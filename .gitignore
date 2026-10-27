@@ -1,0 +1,22 @@
+# Configuração local / segredos
+config.php
+.env
+.env.*
+!.env.example
+
+# Sistema operacional / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs, temporários e backups
+*.log
+*.tmp
+*.bak
+*.zip
+backup/
+
+# Dependências (caso sejam adicionadas futuramente)
+node_modules/
+vendor/

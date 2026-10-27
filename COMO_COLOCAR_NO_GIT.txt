@@ -1,0 +1,38 @@
+SKALAD - COMO COLOCAR NO GIT/GITHUB
+====================================
+
+1. Extraia esta pasta.
+
+2. Antes de testar o site:
+   - copie config.example.php
+   - renomeie a cópia para config.php
+   - coloque os dados do seu MySQL no config.php
+
+   Nesta pasta já existe um config.php local preparado para XAMPP padrão.
+   O .gitignore impede que ele seja enviado ao Git.
+
+3. Abra https://github.com e crie um novo repositório chamado, por exemplo:
+   skalad
+
+4. NÃO marque a opção de criar README no GitHub, porque esta pasta já possui README.md.
+
+5. Abra o terminal dentro desta pasta e rode:
+
+   git init
+   git add .
+   git commit -m "Versão inicial do SKALAD"
+   git branch -M main
+   git remote add origin URL_DO_SEU_REPOSITORIO
+   git push -u origin main
+
+6. Troque URL_DO_SEU_REPOSITORIO pela URL do seu repositório.
+   Exemplo de formato:
+   https://github.com/SEU_USUARIO/skalad.git
+
+IMPORTANTE
+----------
+- config.php NÃO será enviado ao GitHub.
+- Nunca coloque senha do banco diretamente no README ou no código público.
+- Se o Git pedir autenticação, faça login no GitHub pelo método solicitado pelo Git/GitHub Desktop.
+- O GitHub armazena o código; ele não executa PHP/MySQL pelo GitHub Pages.
+  Para o SKALAD funcionar online, você ainda precisa de uma hospedagem com PHP e MySQL.
